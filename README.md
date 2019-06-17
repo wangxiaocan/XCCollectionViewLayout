@@ -1,11 +1,35 @@
 # XCCollectionViewLayout
-UICollectionView瀑布流效果，支持水平、垂直滚动
+UICollectionView瀑布流效果、滚动放大效果，支持水平、垂直滚动
 
-|滚动方向|效果图|
+
+
+|样式|效果图|
 |:-:|:-:|
+|滚动放大效果|<img src = "https://github.com/wangxiaocan/XCCollectionViewLayout/blob/master/Resources/lineLayout.gif" width = "200px" alt="滚动放大效果"/>|
 |垂直滚动|<img src = "https://github.com/wangxiaocan/XCCollectionViewLayout/blob/master/Resources/vertical.gif" width = "200px" alt="垂直滚动"/>|
 |水平滚动|<img src = "https://github.com/wangxiaocan/XCCollectionViewLayout/blob/master/Resources/horizontal.gif" width = "400px" alt="水平滚动"/>|
 
+
+
+
+
+<h2>滚动放大效果</h2>
+<h4>导入<b>XCollectionViewLineLayout.h</b></h4>
+
+```Object-C
+XCollectionViewLineLayout *layout = [[XCollectionViewLineLayout alloc] init];
+layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+_collectView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+_collectView.backgroundColor = [UIColor whiteColor];
+_collectView.delegate = self;
+_collectView.dataSource = self;
+[_collectView registerNib:[UINib nibWithNibName:@"LayoutControlCell" bundle:nil] forCellWithReuseIdentifier:NSStringFromClass([LayoutControlCell class])];
+[self.view addSubview:_collectView];
+```
+
+
+
+<h2>瀑布流效果</h2>
 <h4>导入<b>XCWaterCollectionViewLayout.h</b></h4>
 
 ```Object-C
