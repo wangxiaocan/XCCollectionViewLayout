@@ -1,6 +1,6 @@
 # XCCollectionViewLayout
-UICollectionView瀑布流效果、滚动放大效果，支持水平、垂直滚动
-[文章地址](https://www.jianshu.com/p/6fc45587f91b)
+- UICollectionView瀑布流效果、滚动放大效果，支持水平、垂直滚动
+- [https://www.jianshu.com/p/6fc45587f91b](https://www.jianshu.com/p/6fc45587f91b)
 
 
 |样式|效果图|
