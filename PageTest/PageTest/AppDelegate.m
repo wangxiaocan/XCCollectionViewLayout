@@ -22,8 +22,8 @@
     
     
     
-    
-    self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"viewControl"];
+    UINavigationController *navControl = [[UINavigationController alloc] initWithRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"viewControl"]];
+    self.window.rootViewController = navControl;
     [self.window makeKeyAndVisible];
     return YES;
 }

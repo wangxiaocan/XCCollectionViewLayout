@@ -164,10 +164,10 @@
 		72D736F62293A5C000951D30 /* PageTest */ = {
 			isa = PBXGroup;
 			children = (
+				72437BC022B14DAE0082F81C /* UIShadow+UIView */,
+				72437BC122B14DD60082F81C /* XCollectionViewLayout */,
 				72B4759522B67008004670D8 /* WaterLayoutTest */,
 				72437BD022B1506E0082F81C /* FlowLayoutTest */,
-				72437BC122B14DD60082F81C /* XCollectionViewLayout */,
-				72437BC022B14DAE0082F81C /* UIShadow+UIView */,
 				726C660222AF362A00C64025 /* DeviceInfo */,
 				72D736F72293A5C000951D30 /* AppDelegate.h */,
 				72D736F82293A5C000951D30 /* AppDelegate.m */,

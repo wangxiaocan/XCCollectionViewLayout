@@ -31,14 +31,11 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIView *statusBarView = [[UIView alloc] init];
-    statusBarView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 44.0);
-    statusBarView.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:statusBarView];
+    [self setTitle:@"瀑布流"];
     
     XCWaterCollectionViewLayout *layout = [[XCWaterCollectionViewLayout alloc] init];
     layout.scrollDirection = XCWaterCollectionViewScrollDirectionVertical;
-    _collectView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 44.0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - 44.0) collectionViewLayout:layout];
+    _collectView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.navigationController.navigationBar.frame), CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - CGRectGetMaxY(self.navigationController.navigationBar.frame)) collectionViewLayout:layout];
     _collectView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     _collectView.backgroundColor = [UIColor whiteColor];
     _collectView.delegate = self;

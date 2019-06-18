@@ -32,6 +32,12 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
+    if (self.affileTransformStyle) {
+        [self setTitle:@"仿射放大"];
+    }else{
+        [self setTitle:@"线性放大"];
+    }
+    
     XCollectionViewLayout *layout = [[XCollectionViewLayout alloc] init];
     layout.transformStyle = self.affileTransformStyle?XCollectionViewLayout_AffineTranform:XCollectionViewLayout_LinerTransform;
     _collectView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];

@@ -29,13 +29,13 @@
 - (IBAction)jumpToControl:(UIButton *)sender{
     if (sender.tag == 1) {
         WaterViewController *control = [[WaterViewController alloc] init];
-        [self presentViewController:control animated:YES completion:nil];
+        [self.navigationController pushViewController:control animated:YES];
     }else if (sender.tag == 2) {
         LayoutController *control = [[LayoutController alloc] initWithAffineStyle:YES];
-        [self presentViewController:control animated:YES completion:nil];
+        [self.navigationController pushViewController:control animated:YES];
     }else if (sender.tag == 3) {
         LayoutController *control = [[LayoutController alloc] init];
-        [self presentViewController:control animated:YES completion:nil];
+        [self.navigationController pushViewController:control animated:YES];
     }
 }
 
