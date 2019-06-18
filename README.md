@@ -11,7 +11,7 @@
 |瀑布流-水平滚动|<img src = "https://github.com/wangxiaocan/XCCollectionViewLayout/blob/master/Resources/horizontal.gif" width = "400px" alt="水平滚动"/>|
 
 
-<h3>导入<b>XCollectionViewLayout.h</b></h4>
+<h3>导入<b>XCollectionViewLayout.h</b></h3>
 <b>XCollectionViewLayout</b>属性及代理
 
 ```Object-C
@@ -30,7 +30,7 @@ XCollectionViewLayout_AffineTranform,//仿射旋转放大
 ```
 
 
-<h4>滚动仿射放大效果</h2>
+<h4>滚动仿射放大效果</h4>
 
 ```Object-C
 XCollectionViewLayout *layout = [[XCollectionViewLayout alloc] init];
@@ -43,7 +43,7 @@ _collectView.dataSource = self;
 [self.view addSubview:_collectView];
 ```
 
-<h4>滚动放大效果</h2>
+<h4>滚动放大效果</h4>
 
 ```Object-C
 XCollectionViewLayout *layout = [[XCollectionViewLayout alloc] init];
