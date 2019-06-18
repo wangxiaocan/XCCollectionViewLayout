@@ -2,6 +2,7 @@
 - UICollectionView瀑布流效果、滚动放大效果，支持水平、垂直滚动
 - [https://www.jianshu.com/p/6fc45587f91b](https://www.jianshu.com/p/6fc45587f91b)
 
+<img src='https://github.com/wangxiaocan/XCCollectionViewLayout/blob/master/Resources/all.gif'  style='display:block;margin:20px auto;width:200px'/>
 
 |样式|效果图|
 |:-:|:-:|
