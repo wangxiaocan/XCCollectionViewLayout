@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LayoutControlCell" id="gTV-IL-0wX" customClass="LayoutControlCell">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="204"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="204"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPN-Z2-Yph">
+                        <rect key="frame" x="0.0" y="0.0" width="145" height="204"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="41"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lM7-Da-qae">
+                        <rect key="frame" x="10" y="10" width="125" height="184"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aPN-Z2-Yph" secondAttribute="trailing" id="AS1-pt-kV5"/>
+                <constraint firstItem="aPN-Z2-Yph" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DkS-eb-2hi"/>
+                <constraint firstItem="aPN-Z2-Yph" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="J6S-YA-Xd3"/>
+                <constraint firstAttribute="bottom" secondItem="lM7-Da-qae" secondAttribute="bottom" constant="10" id="Skr-Ga-AoT"/>
+                <constraint firstAttribute="trailing" secondItem="lM7-Da-qae" secondAttribute="trailing" constant="10" id="URy-JH-lBa"/>
+                <constraint firstItem="lM7-Da-qae" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="dRu-xL-gK2"/>
+                <constraint firstAttribute="bottom" secondItem="aPN-Z2-Yph" secondAttribute="bottom" id="dlq-cq-fE2"/>
+                <constraint firstItem="lM7-Da-qae" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="heS-hF-MjE"/>
+            </constraints>
+            <size key="customSize" width="145" height="204"/>
+            <connections>
+                <outlet property="lImgView" destination="lM7-Da-qae" id="CKS-KZ-GBY"/>
+                <outlet property="numlabel" destination="aPN-Z2-Yph" id="OKW-mw-4cZ"/>
+            </connections>
+            <point key="canvasLocation" x="206.52173913043481" y="154.01785714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

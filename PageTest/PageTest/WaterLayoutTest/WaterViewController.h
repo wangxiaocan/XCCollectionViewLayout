@@ -1,8 +1,8 @@
 //
-//  XCollectionViewLineLayout.h
+//  WaterViewController.h
 //  PageTest
 //
-//  Created by 王文科 on 2019/6/17.
+//  Created by xiao can on 2019/6/16.
 //  Copyright © 2019 xiaocan. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XCollectionViewLineLayout : UICollectionViewFlowLayout
+@interface WaterViewController : UIViewController
 
 @end
 

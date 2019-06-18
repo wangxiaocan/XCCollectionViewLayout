@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="viewControl" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuG-Ai-zIz">
+                                <rect key="frame" x="20" y="378.5" width="374" height="139"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFo-bw-VZB">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="瀑布流"/>
+                                        <connections>
+                                            <action selector="jumpToControl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffV-61-qGH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgv-SN-jEj">
+                                        <rect key="frame" x="0.0" y="53" width="374" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="仿射变换"/>
+                                        <connections>
+                                            <action selector="jumpToControl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6J-og-b3e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdA-bO-8wk">
+                                        <rect key="frame" x="0.0" y="106" width="374" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="滚动放大"/>
+                                        <connections>
+                                            <action selector="jumpToControl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FVB-Tb-Ve6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mgv-SN-jEj" firstAttribute="top" secondItem="fFo-bw-VZB" secondAttribute="bottom" constant="20" id="DIY-dh-7uu"/>
+                                    <constraint firstAttribute="trailing" secondItem="OdA-bO-8wk" secondAttribute="trailing" id="Efy-XR-AVm"/>
+                                    <constraint firstItem="mgv-SN-jEj" firstAttribute="leading" secondItem="zuG-Ai-zIz" secondAttribute="leading" id="N4F-5z-Pjf"/>
+                                    <constraint firstAttribute="trailing" secondItem="fFo-bw-VZB" secondAttribute="trailing" id="Qvw-Qy-e4o"/>
+                                    <constraint firstItem="OdA-bO-8wk" firstAttribute="top" secondItem="mgv-SN-jEj" secondAttribute="bottom" constant="20" id="Xnd-8x-gSi"/>
+                                    <constraint firstAttribute="bottom" secondItem="OdA-bO-8wk" secondAttribute="bottom" id="eQ4-wH-vwF"/>
+                                    <constraint firstItem="OdA-bO-8wk" firstAttribute="leading" secondItem="zuG-Ai-zIz" secondAttribute="leading" id="gms-hH-Y8U"/>
+                                    <constraint firstItem="fFo-bw-VZB" firstAttribute="leading" secondItem="zuG-Ai-zIz" secondAttribute="leading" id="kcB-cX-emA"/>
+                                    <constraint firstItem="fFo-bw-VZB" firstAttribute="top" secondItem="zuG-Ai-zIz" secondAttribute="top" id="qgJ-LF-WaL"/>
+                                    <constraint firstAttribute="trailing" secondItem="mgv-SN-jEj" secondAttribute="trailing" id="vKf-dO-gDA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zuG-Ai-zIz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KbM-PL-M7f"/>
+                            <constraint firstItem="zuG-Ai-zIz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ktg-pj-cdi"/>
+                            <constraint firstItem="zuG-Ai-zIz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bTG-JQ-1I3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zuG-Ai-zIz" secondAttribute="trailing" constant="20" id="lGV-27-fb2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+</document>

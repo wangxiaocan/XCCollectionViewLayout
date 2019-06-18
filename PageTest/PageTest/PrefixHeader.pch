@@ -1,0 +1,18 @@
+
+//
+//  PrefixHeader.pch
+//  PageTest
+//
+//  Created by xiao can on 2019/6/11.
+//  Copyright © 2019 xiaocan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIShadow+UIView.h"
+
+#endif /* PrefixHeader_pch */
