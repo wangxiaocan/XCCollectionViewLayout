@@ -7,7 +7,7 @@
 //
 
 #import "LayoutController.h"
-#import "../XCollectionViewLayout/XCollectionViewLayout.h"
+#import "XCollectionViewLayout.h"
 #import "LayoutControlCell.h"
 
 @interface LayoutController ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -31,6 +31,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     if (self.affileTransformStyle) {
         [self setTitle:@"仿射放大"];
@@ -68,6 +70,12 @@
     cell.numlabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.item];
 
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if ([collectionView.collectionViewLayout clickCellAtIndexPath:indexPath]) {
+        NSLog(@"click cell at section: %ld  at item: %ld",(long)indexPath.section,(long)indexPath.item);
+    }
 }
 
 /*

@@ -7,6 +7,7 @@
 //
 
 #import "XCollectionViewLayout.h"
+#import <objc/runtime.h>
 
 
 @implementation XCollectionViewLayout
@@ -74,8 +75,6 @@
         }else{
             attribute.transform = CGAffineTransformMakeScale(self.scaleCoefficient + (1 - self.scaleCoefficient) * coefficient, self.scaleCoefficient + (1 - self.scaleCoefficient) * coefficient);
         }
-        
-        
     }
     return attributes;
 }
@@ -133,6 +132,43 @@
     }else{
         self.minimumLineSpacing = 0;
     }
+}
+
+@end
+
+
+
+@implementation UICollectionViewLayout(AutoScrollToCenterClickCell)
+
+
++ (void)load{
+    Class class = [self superclass];
+    SEL select = @selector(clickCellAtIndexPath:);
+    IMP implementation = class_getMethodImplementation(class, select);
+    class_addMethod(class, select, implementation, method_getTypeEncoding(class_getInstanceMethod(class, select)));
+}
+
+
+/** 点击cell时判断cell是否在屏幕中央
+ *  当前cell在屏幕正中央时返回 YES
+ *  当前cell不在屏幕正中央时自动滚动到点击的cell
+ */
+- (BOOL)clickCellAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath) {
+        UICollectionViewLayoutAttributes *attribute = [self layoutAttributesForItemAtIndexPath:indexPath];
+        if (attribute) {
+            CGFloat centerX = self.collectionView.contentOffset.x + CGRectGetWidth(self.collectionView.frame) / 2.0;
+            if (ABS(CGRectGetMidX(attribute.frame) - centerX) <= 5.0) {
+                return YES;
+            }
+            CGPoint offset = self.collectionView.contentOffset;
+            offset.x = CGRectGetMidX(attribute.frame) - centerX + offset.x;
+            offset = [self targetContentOffsetForProposedContentOffset:offset withScrollingVelocity:CGPointZero];
+            [self.collectionView setContentOffset:offset animated:YES];
+        }
+        return NO;
+    }
+    return NO;
 }
 
 @end

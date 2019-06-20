@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7237343422B7C91D00ED2ABB /* XCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7237343322B7C91D00ED2ABB /* XCollectionViewLayout.m */; };
-		723B757A22B53E310073B3FB /* XCWaterCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 723B757922B53E310073B3FB /* XCWaterCollectionViewLayout.m */; };
 		72437BCA22B14F2E0082F81C /* LayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72437BC922B14F2E0082F81C /* LayoutController.m */; };
 		72437BCE22B150670082F81C /* LayoutControlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72437BCC22B150670082F81C /* LayoutControlCell.m */; };
 		72437BCF22B150670082F81C /* LayoutControlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72437BCD22B150670082F81C /* LayoutControlCell.xib */; };
@@ -30,13 +28,11 @@
 		72D7370F2293A61800951D30 /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D7370E2293A61800951D30 /* PageController.m */; };
 		72F4E34A22B77E7400F02EA8 /* WaterHorizontalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F4E34822B77E7400F02EA8 /* WaterHorizontalCell.m */; };
 		72F4E34B22B77E7400F02EA8 /* WaterHorizontalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F4E34922B77E7400F02EA8 /* WaterHorizontalCell.xib */; };
+		72FA2B6222BB5A7C00A8DF1C /* XCWaterCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FA2B5E22BB5A7C00A8DF1C /* XCWaterCollectionViewLayout.m */; };
+		72FA2B6322BB5A7C00A8DF1C /* XCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FA2B6122BB5A7C00A8DF1C /* XCollectionViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7237343222B7C91D00ED2ABB /* XCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCollectionViewLayout.h; sourceTree = "<group>"; };
-		7237343322B7C91D00ED2ABB /* XCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCollectionViewLayout.m; sourceTree = "<group>"; };
-		723B757822B53E310073B3FB /* XCWaterCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCWaterCollectionViewLayout.h; sourceTree = "<group>"; };
-		723B757922B53E310073B3FB /* XCWaterCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCWaterCollectionViewLayout.m; sourceTree = "<group>"; };
 		72437BC822B14F2E0082F81C /* LayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutController.h; sourceTree = "<group>"; };
 		72437BC922B14F2E0082F81C /* LayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutController.m; sourceTree = "<group>"; };
 		72437BCB22B150670082F81C /* LayoutControlCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutControlCell.h; sourceTree = "<group>"; };
@@ -72,6 +68,10 @@
 		72F4E34722B77E7400F02EA8 /* WaterHorizontalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterHorizontalCell.h; sourceTree = "<group>"; };
 		72F4E34822B77E7400F02EA8 /* WaterHorizontalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterHorizontalCell.m; sourceTree = "<group>"; };
 		72F4E34922B77E7400F02EA8 /* WaterHorizontalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaterHorizontalCell.xib; sourceTree = "<group>"; };
+		72FA2B5E22BB5A7C00A8DF1C /* XCWaterCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCWaterCollectionViewLayout.m; sourceTree = "<group>"; };
+		72FA2B5F22BB5A7C00A8DF1C /* XCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCollectionViewLayout.h; sourceTree = "<group>"; };
+		72FA2B6022BB5A7C00A8DF1C /* XCWaterCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCWaterCollectionViewLayout.h; sourceTree = "<group>"; };
+		72FA2B6122BB5A7C00A8DF1C /* XCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCollectionViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,17 +92,6 @@
 				726C660722AF592800C64025 /* UIShadow+UIView.m */,
 			);
 			path = "UIShadow+UIView";
-			sourceTree = "<group>";
-		};
-		72437BC122B14DD60082F81C /* XCollectionViewLayout */ = {
-			isa = PBXGroup;
-			children = (
-				7237343222B7C91D00ED2ABB /* XCollectionViewLayout.h */,
-				7237343322B7C91D00ED2ABB /* XCollectionViewLayout.m */,
-				723B757822B53E310073B3FB /* XCWaterCollectionViewLayout.h */,
-				723B757922B53E310073B3FB /* XCWaterCollectionViewLayout.m */,
-			);
-			path = XCollectionViewLayout;
 			sourceTree = "<group>";
 		};
 		72437BD022B1506E0082F81C /* FlowLayoutTest */ = {
@@ -164,8 +153,8 @@
 		72D736F62293A5C000951D30 /* PageTest */ = {
 			isa = PBXGroup;
 			children = (
+				72FA2B5D22BB5A7C00A8DF1C /* XCollectionViewLayout */,
 				72437BC022B14DAE0082F81C /* UIShadow+UIView */,
-				72437BC122B14DD60082F81C /* XCollectionViewLayout */,
 				72B4759522B67008004670D8 /* WaterLayoutTest */,
 				72437BD022B1506E0082F81C /* FlowLayoutTest */,
 				726C660222AF362A00C64025 /* DeviceInfo */,
@@ -184,6 +173,18 @@
 				726C660C22AF827400C64025 /* PrefixHeader.pch */,
 			);
 			path = PageTest;
+			sourceTree = "<group>";
+		};
+		72FA2B5D22BB5A7C00A8DF1C /* XCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				72FA2B6022BB5A7C00A8DF1C /* XCWaterCollectionViewLayout.h */,
+				72FA2B5E22BB5A7C00A8DF1C /* XCWaterCollectionViewLayout.m */,
+				72FA2B5F22BB5A7C00A8DF1C /* XCollectionViewLayout.h */,
+				72FA2B6122BB5A7C00A8DF1C /* XCollectionViewLayout.m */,
+			);
+			name = XCollectionViewLayout;
+			path = ../../XCollectionViewLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,14 +266,14 @@
 			files = (
 				72D7370F2293A61800951D30 /* PageController.m in Sources */,
 				726C65FE22AF2FA800C64025 /* XC_DeviceInfo.m in Sources */,
+				72FA2B6322BB5A7C00A8DF1C /* XCollectionViewLayout.m in Sources */,
 				726C660122AF30BA00C64025 /* SFHFKeychainUtils.m in Sources */,
 				72437BCA22B14F2E0082F81C /* LayoutController.m in Sources */,
 				72F4E34A22B77E7400F02EA8 /* WaterHorizontalCell.m in Sources */,
-				723B757A22B53E310073B3FB /* XCWaterCollectionViewLayout.m in Sources */,
 				726C660822AF592800C64025 /* UIShadow+UIView.m in Sources */,
 				72B4759822B6703E004670D8 /* WaterViewController.m in Sources */,
+				72FA2B6222BB5A7C00A8DF1C /* XCWaterCollectionViewLayout.m in Sources */,
 				72D736FC2293A5C000951D30 /* ViewController.m in Sources */,
-				7237343422B7C91D00ED2ABB /* XCollectionViewLayout.m in Sources */,
 				72D737072293A5C300951D30 /* main.m in Sources */,
 				72437BCE22B150670082F81C /* LayoutControlCell.m in Sources */,
 				72D736F92293A5C000951D30 /* AppDelegate.m in Sources */,
@@ -422,6 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PageTest/PrefixHeader.pch;
 				INFOPLIST_FILE = PageTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,6 +443,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PageTest/PrefixHeader.pch;
 				INFOPLIST_FILE = PageTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

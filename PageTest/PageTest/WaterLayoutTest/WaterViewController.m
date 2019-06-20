@@ -116,7 +116,7 @@
         [view addSubview:label];
     }
     label.textAlignment = NSTextAlignmentLeft;
-    label.text = [NSString stringWithFormat:@"　　section %d",indexPath.section];
+    label.text = [NSString stringWithFormat:@"　　section %ld",(long)indexPath.section];
     view.backgroundColor = [UIColor lightGrayColor];
     return view;
 }
@@ -128,8 +128,8 @@
     return cell;
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"click cell at section: %ld  at item: %ld",(long)indexPath.section,(long)indexPath.item);
 }
 
 @end
