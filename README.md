@@ -2,6 +2,20 @@
 - UICollectionView瀑布流效果、滚动放大效果，支持水平、垂直滚动
 - [https://www.jianshu.com/p/6fc45587f91b](https://www.jianshu.com/p/6fc45587f91b)
 
+
+#### 使用pod导入文件或下载解压后将XCollectionViewLayout文件夹导入项目中
+> pod 'XCollectionViewLayout'
+
+##### 导入头文件
+```Object-C
+//瀑布流样式 UICollectionViewLayout
+#import "XCWaterCollectionViewLayout.h"
+
+//滑动放大、仿射放大样式 UICollectionViewLayout
+#import "XCollectionViewLayout.h"
+
+```
+
 <img src='https://github.com/wangxiaocan/XCCollectionViewLayout/blob/master/Resources/all.gif' width=200/>
 
 |样式|效果图|
